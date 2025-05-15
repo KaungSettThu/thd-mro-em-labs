@@ -63,7 +63,7 @@ try:
 
         print(f"Predicted: {label} (pred. time: {end_time - start_time:.8f}s)")
         sense.clear(COLORS[label])
-        
+
 except KeyboardInterrupt:
     sense.clear()
     print("Stopped.")
