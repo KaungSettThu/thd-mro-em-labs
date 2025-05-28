@@ -5,7 +5,7 @@ from sense_hat import SenseHat
 
 sense = SenseHat()
 
-LABEL = "move_circle" # change to "move_shake", "move_twist" or "move_none" for otther classes
+LABEL = "move_none" # change to "move_shake", "move_twist" or "move_none" for otther classes
 
 # set sampling parameters
 
