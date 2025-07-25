@@ -1,0 +1,123 @@
+\documentclass[a4paper,12pt]{article}
+
+% Packages
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}  % For images
+\usepackage{listings}  % For code snippets
+\usepackage{xcolor}    % For code coloring
+\usepackage{hyperref}  % For hyperlinks
+\usepackage{amsmath}   % For math equations
+\usepackage{caption}   % Better captions
+\usepackage{geometry}  % Page layout
+\geometry{margin=2.5cm}
+
+% Remove paragraph indentation
+\setlength{\parindent}{0pt}
+
+% Code styling
+\lstset{
+    language=Python,
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue},
+    stringstyle=\color{red},
+    commentstyle=\color{gray},
+    breaklines=true,
+    frame=single
+}
+
+\title{Lab Report: \textbf{Title of the Lab}}
+\author{Student Name \\ Student ID \\ Course Name \\ Instructor: Prof. Tobias Schaffer}
+\date{Date}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Provide a short introduction about the task. Explain the objective of the lab and its relevance.
+
+\section{Methodology}
+Explain the approach taken, including algorithms, data structures, tools, and programming languages used.
+
+\subsection{Software and Hardware Used}
+\begin{itemize}
+    \item Programming language: e.g. Python/C++/JavaScript
+    \item Libraries: NumPy, OpenCV, etc.
+    \item Hardware: CPU/GPU specifications
+\end{itemize}
+
+\subsection{Code Repository}
+The full source code for this project is available on GitHub at:
+
+\begin{center}
+\href{https://github.com/yourusername/your-repository}{\texttt{https://github.com/yourusername/your-repository}}
+\end{center}
+
+This repository includes:
+\begin{itemize}
+    \item Source code files
+    \item Installation instructions
+    \item Example datasets (if applicable)
+    \item Documentation and usage guidelines
+\end{itemize}
+
+\subsection{Code Implementation}
+Show code snippets that demonstrate important parts of the implementation:
+
+\begin{lstlisting}
+# Example: Python code for matrix multiplication
+import numpy as np
+
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+C = np.dot(A, B)
+
+print("Matrix multiplication result:\n", C)
+\end{lstlisting}
+
+\section{Results}
+Present the results obtained from running the program. Include tables, figures, or graphs if necessary.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{example_image.png}
+    \caption{Example output from the program}
+    \label{fig:example}
+\end{figure}
+
+\section{Challenges, Limitations, and Error Analysis}
+During the implementation of this project, several challenges and errors were encountered. Below are some key points:
+
+\subsection{Challenges Faced}
+\begin{itemize}
+    \item e.g. Understanding and implementing [concept or algorithm].
+    \item ...
+\end{itemize}
+
+\subsection{Error Analysis}
+Some common errors that occurred during the development:
+\begin{itemize}
+    \item e.g. Syntax errors due to incorrect function calls.
+    \item ...
+\end{itemize}
+
+\subsection{Limitations of the Implementation}
+The model has limitions in [...]  due to [...].
+
+\section{Discussion}
+Analyze the results. Discuss any insights gained and how they compare to expectations.
+
+\section{Conclusion}
+Summarize the key findings and suggest future improvements.
+
+\section{References}
+List all references. For example:
+
+\begin{itemize}
+    \item Author Name, "Book Title", Publisher, Year.
+    \item Website: \url{https://example.com}
+\end{itemize}
+
+\end{document}
